@@ -1,7 +1,0 @@
-train: /gdrive/MyDrive/AIP391/License_Data/images/train
-val: /gdrive/MyDrive/AIP391/License_Data/images/val
-test:  # test images (optional)
-
-# Classes
-nc: 1  # number of classes
-names: ['license']  # class names
