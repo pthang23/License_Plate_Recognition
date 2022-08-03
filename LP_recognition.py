@@ -1,5 +1,6 @@
 import cv2
 import torch
+import argparse
 
 import processing_function.read_character as re
 import processing_function.rotate_image as ro
@@ -8,7 +9,11 @@ import processing_function.rotate_image as ro
 LP_detect = torch.hub.load('ultralytics/yolov5', 'custom', 'model/plate_detection.pt', force_reload=False)
 OCR = torch.hub.load('ultralytics/yolov5', 'custom', 'model/optical_character_recognition.pt', force_reload=False)
 
-image = cv2.imread('test_image/test1.jpg')
+ap = argparse.ArgumentParser()
+ap.add_argument('-i', '--image', required=True, help='path to input image')
+args = ap.parse_args()
+
+image = cv2.imread(args.image)
 
 # PLATE DETECTION
 plates = LP_detect(image)
