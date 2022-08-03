@@ -16,7 +16,7 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
 
 ```bash
   git clone https://github.com/Marsmallotr/License-Plate-Recognition.git
-  cd License-Plate-Recognition
+  cd License_Plate_Recognition
 
   # Install Dependencies
   pip install -r ./requirement.txt
@@ -37,7 +37,7 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   python webcam_LP_recognition.py 
 
   # Run Inference On Image
-  python lp_image.py -i test_image/test1.jpg
+  python LP_recognition.py -i test_image/test2.jpg
 
   # Run stepbystep_LP_recognition.ipynb If You Want To Know How Model Work In Each Step
 ```
