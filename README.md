@@ -37,7 +37,7 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   python webcam_LP_recognition.py 
 
   # Run Inference On Image
-  python LP_recognition.py -i test_image/test2.jpg
+  python LP_recognition.py -i test_image/test3.jpg
 
   # Run stepbystep_LP_recognition.ipynb If You Want To Know How Model Work In Each Step
 ```
