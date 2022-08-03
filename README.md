@@ -15,7 +15,7 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
 ## Installation
 
 ```bash
-  git clone https://github.com/Marsmallotr/License-Plate-Recognition.git
+  git clone https://github.com/pthang23/License_Plate_Recognition.git
   cd License_Plate_Recognition
 
   # Install Dependencies
