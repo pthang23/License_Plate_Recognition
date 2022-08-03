@@ -5,8 +5,8 @@ import processing_function.read_character as re
 import processing_function.rotate_image as ro
 
 # LOAD MODEL
-LP_detect = torch.hub.load('ultralytics/yolov5', 'custom', 'model/plate_detection.pt', force_reload=False)
-OCR = torch.hub.load('ultralytics/yolov5', 'custom', 'model/optical_character_recognition.pt', force_reload=False)
+LP_detect = torch.hub.load('ultralytics/yolov5', 'custom', 'model/plate_detection.pt', force_reload=True)
+OCR = torch.hub.load('ultralytics/yolov5', 'custom', 'model/optical_character_recognition.pt', force_reload=True)
 
 video = cv2.VideoCapture(0)
 while True:
