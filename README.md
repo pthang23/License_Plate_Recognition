@@ -55,3 +55,7 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   training/plate_detection.ipynb                  #for LP_Detection
   training/optical_character_recognition.ipynb    #for OCR
 ```
+
+## Reference
+
+YOLOV5 by ultralytics ([YOLOV5](https://github.com/ultralytics/yolov5))
