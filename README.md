@@ -39,7 +39,8 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   # Run Inference On Image
   python LP_recognition.py -i test_image/test3.jpg
 
-  # Run stepbystep_LP_recognition.ipynb If You Want To Know How Model Work In Each Step
+  # Run stepbystep_LP_recognition.py If You Want To Know How Model Work In Each Step
+  python stepbystep_LP_recognition.py -i test_image/test3.jpg
 ```
 
 ## Demo Result
