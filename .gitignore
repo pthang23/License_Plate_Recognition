@@ -1,3 +1,4 @@
 .idea/
 dataset/
+__pycache__/
 processing_function/__pycache__/
