@@ -22,14 +22,6 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   pip install -r ./requirement.txt
 ```
 
-- **Pretrained models** provided in /model folder in this repo 
-
-- **Training process** provided in /training folder in this repo
-
-- **Support functions** provided in /processing_function folder in this repo
-
-- **Test images** and its **result** provided in /test_image and /result_image folder in this repo
-
 ## Run License Plate Recognition
 
 ```bash
@@ -37,20 +29,17 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   python webcam_LP_recognition.py 
 
   # Run Inference On Image
-  python LP_recognition.py -i test_image/test3.jpg
-
-  # Run stepbystep_LP_recognition.py If You Want To Know How Model Work In Each Step
-  python stepbystep_LP_recognition.py -i test_image/test3.jpg
+  python LP_recognition.py -i demo/raw/test1.jpg
 ```
 
 ## Demo Result
 
-<img src="result_image/result4.jpg" alt="Demo1" width="450"/>
-<img src="result_image/result5.jpg" alt="Demo2" width="450"/>
+<img src="demo/prediction/result4.jpg" alt="Demo1" width="450"/>
+<img src="demo/prediction/result5.jpg" alt="Demo2" width="450"/>
 
 ## Training
 
-**You can retrain models using code in /training folder**
+You can retrain models using notebook in `/training` folder
 
 ```bash
   training/plate_detection.ipynb                  #for LP_Detection
