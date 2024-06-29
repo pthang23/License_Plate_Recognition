@@ -1,0 +1,7 @@
+train: /dataset/license_data/images/train
+val: /dataset/license_data/images/val
+test:  # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['license']  # class names

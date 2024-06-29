@@ -2,7 +2,7 @@ import cv2
 import torch
 
 import processing_function.read_character as re
-import processing_function.rotate_image as ro
+import processing_function.rotate_plate as ro
 
 # LOAD MODEL
 LP_detect = torch.hub.load('ultralytics/yolov5', 'custom', 'model/plate_detection.pt', force_reload=True)
