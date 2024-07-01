@@ -12,7 +12,7 @@ This repo uses 2 sets of data for 2 stage of license plate recognition problem:
 
 Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://github.com/winter2897/Real-time-Auto-License-Plate-Recognition-with-Jetson-Nano/blob/main/doc/dataset.md) for sharing a part in this dataset
 
-## Run with docker
+## Run With Docker
 
 ```bash
   docker compose up
