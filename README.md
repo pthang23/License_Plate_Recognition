@@ -33,10 +33,10 @@ API open on `<host_ip>:5000/lp_recognition`
 
 ```bash
   # Run Inference On Webcam (15-20fps if there is 1 license plate in scene)
-  python webcam_LP_recognition.py 
+  python recognition/webcam_LP_recognition.py 
 
   # Run Inference On Image
-  python LP_recognition.py -i demo/raw/test1.jpg
+  python recognition/LP_recognition.py -i demo/raw/test1.jpg
 ```
 
 ## Open API
@@ -56,7 +56,7 @@ API open on `<host_ip>:5000/lp_recognition`
 Augment your dataset to help the model be able to recognize license plates from many different perspectives 
 
 ```bash
-  python augmentation.py -d <path/to/dataset>
+  python processing_function/augmentation.py -d <path/to/dataset>
 ```
 
 Then you can retrain models using notebook and yaml config in `/training` folder

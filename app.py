@@ -3,7 +3,7 @@ import cv2
 import torch
 from flask import Flask, request
 
-from LP_recognition import get_LP_number
+from recognition import get_LP_number
 
 app = Flask(__name__)
 
