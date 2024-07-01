@@ -12,6 +12,13 @@ This repo uses 2 sets of data for 2 stage of license plate recognition problem:
 
 Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://github.com/winter2897/Real-time-Auto-License-Plate-Recognition-with-Jetson-Nano/blob/main/doc/dataset.md) for sharing a part in this dataset
 
+## Run with docker
+
+```bash
+  docker compose up
+```
+API open on `<host_ip>:5000/lp_recognition`
+
 ## Installation
 
 ```bash
@@ -32,6 +39,13 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
   python LP_recognition.py -i demo/raw/test1.jpg
 ```
 
+## Open API
+
+```bash
+  python app.py 
+```
+API open on `<host_ip>:5000/lp_recognition`
+
 ## Demo Result
 
 <img src="demo/prediction/result4.jpg" alt="Demo1" width="450"/>
@@ -39,7 +53,13 @@ Thanks [Mì Ai](https://www.miai.vn/thu-vien-mi-ai/) and [winter2897](https://gi
 
 ## Training
 
-You can retrain models using notebook in `/training` folder
+Augment your dataset to help the model be able to recognize license plates from many different perspectives 
+
+```bash
+  python augmentation.py -d <path/to/dataset>
+```
+
+Then you can retrain models using notebook and yaml config in `/training` folder
 
 ```bash
   training/plate_detection.ipynb                  #for LP_Detection

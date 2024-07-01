@@ -2,6 +2,7 @@ import os
 import numpy as np
 import cv2
 import random
+import argparse
 
 
 def transform_image(image):
@@ -107,5 +108,9 @@ def augment_dataset(dataset_path):
 
 
 if __name__ == '__main__':
-    augment_dataset('dataset/license_data')
-    augment_dataset('dataset/OCR_data')
+    # ADD ARGPARSE
+    ap = argparse.ArgumentParser()
+    ap.add_argument('-d', '--dataset', required=True, help='path to training dataset')
+    args = ap.parse_args()
+
+    augment_dataset(args.dataset)

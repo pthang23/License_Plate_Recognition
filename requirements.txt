@@ -1,0 +1,15 @@
+-f https://download.pytorch.org/whl/torch_stable.html
+
+opencv-python
+matplotlib
+numpy
+Pillow
+torch==1.12.0+cu116
+torchvision==0.13.0+cu116
+tqdm
+pyyaml
+requests
+pandas
+seaborn
+
+flask
